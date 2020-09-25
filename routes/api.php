@@ -23,3 +23,7 @@ Route::resource('/v1/contacts', 'contactsAPIController')->middleware('auth');
 
 
 Route::resource('departments', 'departmentAPIController');
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('accounts', 'Admin\AccountAPIController');
+});

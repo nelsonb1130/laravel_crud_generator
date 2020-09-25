@@ -1,8 +1,5 @@
-
-<li class="{{ Request::is('users*') ? 'active' : '' }}">
-    <a href="{!! route('users.index') !!}"><i class="fa fa-user"></i><span>Users</span></a>
+<li class="{{ Request::is('admin/accounts*') ? 'active' : '' }}">
+    <a href="{{ route('admin.accounts.index') }}"><i class="fa fa-edit"></i><span>@lang('models/accounts.plural')</span></a>
 </li>
 
-<li class="{{ Request::is('users*') ? 'active' : '' }}">
-    <a href="{!! route('users.index') !!}"><i class="fa fa-user"></i><span>Users</span></a>
-</li>
+
